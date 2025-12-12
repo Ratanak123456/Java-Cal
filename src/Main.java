@@ -50,6 +50,10 @@ public class Main {
                     }
                     break;
                 case 5: result = Math.pow(a, b); break;
+                default:
+                    System.out.println("Unexpected error: Invalid operation!");
+                    error = true;
+                    break;
             }
 
             if (!error) {
@@ -61,5 +65,4 @@ public class Main {
         scanner.close();
         System.out.println("Thank you!");
     }
-
 }
